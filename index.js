@@ -26,7 +26,6 @@ app.get("/", (req, res) => {
 app.use((error, req, res, next) => {
   error.code ? res.status(error.code) : res.status(400);
   res.json({
-    code: error.code,
     error: error.message,
   });
 });
