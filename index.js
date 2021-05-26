@@ -18,6 +18,9 @@ app.use(express.urlencoded({ extended: true })); // URL Encoded Parser (Form Dat
 // Routes
 app.use("/example", require("./routes/example"));
 
+// API Routes
+// app.use("/api", require("./routes/api"));
+
 app.get("/", (req, res) => {
   res.render("starter");
 });
