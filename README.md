@@ -40,6 +40,7 @@ Some example files had been included as a cheat-sheet to further assist your pro
   ```
   npm i -D -g sequelize-cli
   ```
+- Change port and db settings on the .env file
 - Start the project with this command
   ```
   npm run dev
