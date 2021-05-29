@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const exampleSchema = require("../validators/exampleSchema");
-const db = require("../database/database");
+const db = require("../../database/database");
 
 router.get("/", (req, res) => {
   res.json({

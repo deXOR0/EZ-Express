@@ -11,12 +11,13 @@ const app = express();
 // App setup
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.set("views", __dirname + "/public/views");
 app.use(express.json()); // JSON Parser
 app.use(express.urlencoded({ extended: true })); // URL Encoded Parser (Form Data)
 dotenv.config();
 
 // Routes
-app.use("/api", require("./routes/api"));
+app.use("/api", require("./src/routes/api"));
 
 app.get("/", (req, res) => {
   res.render("starter");
